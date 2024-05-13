@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2022 at 06:51 PM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 5.6.40
+-- Generation Time: May 13, 2024 at 08:57 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -33,7 +32,7 @@ CREATE TABLE `cart` (
   `pId` int(255) NOT NULL,
   `uName` varchar(255) NOT NULL,
   `pQty` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `cart`
@@ -55,7 +54,7 @@ INSERT INTO `cart` (`cId`, `pId`, `uName`, `pQty`) VALUES
 CREATE TABLE `collection_table` (
   `c_id` int(255) NOT NULL,
   `collection` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `collection_table`
@@ -80,7 +79,7 @@ CREATE TABLE `products` (
   `pCollection` varchar(255) NOT NULL,
   `pImg` varchar(255) NOT NULL,
   `pAImg` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `products`
@@ -123,19 +122,15 @@ CREATE TABLE `registration` (
   `address` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `cpassword` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `registration`
 --
 
 INSERT INTO `registration` (`id`, `username`, `email`, `profile`, `number`, `address`, `password`, `cpassword`) VALUES
-(1, 'abc', 'admin@admin.com', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVwUoQz0A0BFEsRVq4gLh2KMy4l8RCY8ExP9cXDg4xgr1z1u3RmqLRvNLB-DMPNIuIeM&usqp=CAU', '', '', '$2y$10$H1NcHr5i5tTMfIVzyc7v4OWIDsQ29xsU809NVz8zc0CZKxtTbR9fK', '$2y$10$Bcun6P87FSp8yBr/N/nyYej5KtfjoviY/SyRI.qGNyUSiEzqmwwGG'),
-(2, 'kemi', 'kemi2@kem2i.com', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVwUoQz0A0BFEsRVq4gLh2KMy4l8RCY8ExP9cXDg4xgr1z1u3RmqLRvNLB-DMPNIuIeM&usqp=CAU', '', '', '$2y$10$.ItW3zWp.IFGCRxEr.j6muR/n3pH3shTxe6HCNL1ZNKhnQR5UJJUi', '$2y$10$gs5uoviZFPFhh7slQ5YsYO1kM5nm5cczhaZ0GC2PdpJGyWXMCFsaa'),
-(3, 'channa', 'channa@gmail.com', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVwUoQz0A0BFEsRVq4gLh2KMy4l8RCY8ExP9cXDg4xgr1z1u3RmqLRvNLB-DMPNIuIeM&usqp=CAU', '9876543210', '123,somewhere,something', '$2y$10$eV.EwS3lX6AySv2ytz9peOLd7nkySaxKa2QGbkYVAhEDzahVOCM9.', '$2y$10$tFhYBwZ52QuZheOo/P2W3Ok7I7tUkqY9rhAwHdaS4A3eOnnZGKtRG'),
-(4, 'user', 'user@gmail.com', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVwUoQz0A0BFEsRVq4gLh2KMy4l8RCY8ExP9cXDg4xgr1z1u3RmqLRvNLB-DMPNIuIeM&usqp=CAU', '', '', '$2y$10$grCluFz7RBLiI1eLwsvtsO7pG7oxIvf8NOsq/BNp9USYGaVQ3erva', '$2y$10$017O1K1mGmkKw.Ka78Qq6eMeWWh5h/SrZx30xg1vEh0k3/QQkS7V2'),
-(5, 'hash', 'hash@email.com', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVwUoQz0A0BFEsRVq4gLh2KMy4l8RCY8ExP9cXDg4xgr1z1u3RmqLRvNLB-DMPNIuIeM&usqp=CAU', '9874561230', 'somewhere', '', ''),
-(6, 'John', 'John789@gmail.com', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVwUoQz0A0BFEsRVq4gLh2KMy4l8RCY8ExP9cXDg4xgr1z1u3RmqLRvNLB-DMPNIuIeM&usqp=CAU', '', '', '$2y$10$dzGeyBKkkdmL8HZp.9dIle7q7Ffe5QXy0utqwn1LaG0rJewBWtrY6', '$2y$10$8C6/FT/iOhpu/sNym0g/Qeocdx/uPEO20m.3nhATR2tkMxGx6e9Ji');
+(1, 'Admin', 'admin@admin.com', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVwUoQz0A0BFEsRVq4gLh2KMy4l8RCY8ExP9cXDg4xgr1z1u3RmqLRvNLB-DMPNIuIeM&usqp=CAU', '', '', 'admin', 'admin'),
+(2, 'Soumyadeep', 'soumya.ughs@gmail.com', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVwUoQz0A0BFEsRVq4gLh2KMy4l8RCY8ExP9cXDg4xgr1z1u3RmqLRvNLB-DMPNIuIeM&usqp=CAU', '', '', 'Soumya@2001', 'Soumya@2001');
 
 --
 -- Indexes for dumped tables
@@ -187,7 +182,7 @@ ALTER TABLE `collection_table`
 ALTER TABLE `products`
   MODIFY `pId` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
---
+-- 
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
