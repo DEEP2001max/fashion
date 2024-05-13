@@ -7,7 +7,7 @@
     <h2 class="h2_cont_new text-center">Customer Care</h2>
     <div class="container contact-form text-center w-100">
         <form method="post">
-            <h3>Have any questions or concerns ? We're always ready to help! Send us an email at info@smart-fashion.com</h3>
+            <h3>Have any questions or concerns ? We're always ready to help! Send us an email at soumya.ughs@gmail.com</h3>
            <div class="row w-100">
                 <div class="col-md-6">
                     <div class="form-group">
