@@ -39,7 +39,7 @@ require_once 'dbcon.php';
             <div class="container">
                 <header class="d-flex justify-content-center py-3">
                 <ul class="nav nav-pills">
-                    <li class="px-5 py-0 nav-item "><a href="#" class="nav-link nav-elem text-light fs-5 text-uppercase fw-light disabled me-5">Smart Fashion</a></li>
+                    <li class="px-5 py-0 nav-item "><a href="#" class="nav-link nav-elem text-light fs-5 text-uppercase fw-light disabled me-5">Gita Bastralaya</a></li>
                     <li class="nav-item "><a href="home.php" class="nav-link nav-elem text-white mt-1 mx-5" aria-current="page">Home</a></li>
                     <li class="nav-item  dropdown">
                         <a href="#" class="nav-link nav-elem dropdown-toggle text-white mt-1 mx-3" role="button" data-bs-toggle="dropdown" aria-expanded="false">Collection</a>
