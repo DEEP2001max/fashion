@@ -14,7 +14,7 @@
                 <li class="nav-item"><a href="log-in.php" class="nav-link px-2 text-muted" >Profile</a></li>
                 <?php } ?>
             </ul>
-            <p class="text-center text-muted"><a class="text-success fw-bold text-decoration-none" href="https://github.com/lubnafathima">&copy; SMART FASHION</a></p>
+            <p class="text-center text-muted"><a class="text-success fw-bold text-decoration-none" href="https://github.com/Soumyadeep2001">&copy; Gita Bastralaya</a></p>
         </footer>
     </div>
 
